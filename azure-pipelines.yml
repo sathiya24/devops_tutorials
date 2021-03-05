@@ -23,6 +23,6 @@ steps:
 
 - script: |
     pip install pillow six
-    python pythonscript2.py 
+    python pythonscript.py 
   displayName: 'run script'
 
