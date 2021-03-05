@@ -1,5 +1,5 @@
 import json
-from six.moves import urllib
+from six.moves import urllib.request
 url =  urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos")
 data = json.loads(url.read().decode())
 for item in data:
