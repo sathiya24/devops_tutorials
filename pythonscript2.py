@@ -1,7 +1,8 @@
 import os
-import urllib.request, json
-with urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos") as url:
-    data = json.loads(url.read().decode())
+import json
+from six.moves import urllib
+url = urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos")
+data = json.loads(url.read().decode())
 for item in data:
     url = item['url']
     thumbnailUrl = item['thumbnailUrl']
@@ -11,5 +12,5 @@ for item in data:
     print(uniquename)
     print(uniquename1)
     print()
-    urllib.request.urlretrieve(url, "/home/sathya/Downloads/python.png"+ uniquename)
-    urllib.request.urlretrieve(thumbnailUrl, "/home/sathya/Downloads/python.png"+ uniquename1)
+    urllib.request.urlretrieve(url, "/tmp/"+ uniquename)
+    urllib.request.urlretrieve(thumbnailUrl, "/tmp/"+ uniquename1)
