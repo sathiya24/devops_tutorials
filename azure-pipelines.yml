@@ -22,7 +22,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    pip install six
-    python pythonscript.py
+    jqscript
   displayName: 'run script'
 
