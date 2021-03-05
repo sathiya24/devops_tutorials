@@ -1,6 +1,7 @@
 import os
 from PIL import Image
-import urllib.request, json
+import json
+from six.moves import urllib
 with urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos") as url:
     data = json.loads(url.read().decode())
 for item in data:
