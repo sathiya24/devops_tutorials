@@ -5,5 +5,5 @@ for item in data:
     url = item['url']
     thumbnailUrl = item['thumbnailUrl']
     urllib.request.urlretrieve(url, '/tmp/')
-    urllib.request.urlretrieve(thumbnailUrl, '/home/sathya/Downloads/python')
+    urllib.request.urlretrieve(thumbnailUrl, '/tmp/')
 
