@@ -1,8 +1,9 @@
 import os
 from PIL import Image
-import urllib.request, json
-with urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos") as url:
-    data = json.loads(url.read().decode())
+import json
+from six.moves import urllib
+url = urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos")
+data = json.loads(url.read().decode())
 for item in data:
     url = item['url']
     thumbnailUrl = item['thumbnailUrl']
@@ -12,10 +13,10 @@ for item in data:
     print(uniquename)
     print(uniquename1)
     print()
-    urllib.request.urlretrieve(url, "/home/sathya/Downloads/" + uniquename)
-    urllib.request.urlretrieve(thumbnailUrl, "/home/sathya/Downloads/" + uniquename1)
-    im = Image.open("/home/sathya/Downloads/" + uniquename)
-    im1 = Image.open("/home/sathya/Downloads/" + uniquename1)
+    urllib.request.urlretrieve(url, "/tmp/" + uniquename)
+    urllib.request.urlretrieve(thumbnailUrl, "/tmp/" + uniquename1)
+    im = Image.open("/tmp/" + uniquename)
+    im1 = Image.open("/tmp/" + uniquename1)
     new_width = (im.size[0] * 2)
     new_height = (im.size[1] * 2)
     new_width1 = (im1.size[0] * 2)
