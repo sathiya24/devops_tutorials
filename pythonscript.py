@@ -4,6 +4,6 @@ with urllib.request.urlopen("https://jsonplaceholder.typicode.com/photos") as ur
 for item in data:
     url = item['url']
     thumbnailUrl = item['thumbnailUrl']
-    urllib.request.urlretrieve(url, '/home/sathya/Downloads/python')
+    urllib.request.urlretrieve(url, '/tmp/')
     urllib.request.urlretrieve(thumbnailUrl, '/home/sathya/Downloads/python')
 
