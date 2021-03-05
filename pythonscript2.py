@@ -12,5 +12,5 @@ for item in data:
     print(uniquename)
     print(uniquename1)
     print()
-    urllib.request.urlretrieve(url, "/tmp/"+ uniquename)
-    urllib.request.urlretrieve(thumbnailUrl, "/tmp/"+ uniquename1)
+    urllib.request.urlretrieve(url, "/tmp/" + uniquename)
+    urllib.request.urlretrieve(thumbnailUrl, "/tmp/" + uniquename1)
