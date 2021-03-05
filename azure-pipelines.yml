@@ -22,7 +22,7 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    pip install PIL
+    pip install Pillow
     python pythonsample.py
   displayName: 'run script'
 
