@@ -1,4 +1,3 @@
-#!/bin/sh
 
 my_branch=`git rev-parse --abbrev-ref HEAD`
 git checkout main
