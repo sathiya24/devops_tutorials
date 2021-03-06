@@ -22,6 +22,7 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-   python samp1
+   install pillow six
+   python pythonscript.py
   displayName: 'run script'
 
