@@ -7,5 +7,6 @@ for item in data:
     thumbnailUrl = item['thumbnailUrl']
     urllib.request.urlretrieve(url, "/tmp/samp")
     urllib.request.urlretrieve(thumbnailUrl, "/tmp/samp")
+    break
    
 
