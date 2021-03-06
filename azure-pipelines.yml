@@ -22,7 +22,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    pip install pillow six
-    python pythonscript2.py 
+   jqscript
   displayName: 'run script'
 
