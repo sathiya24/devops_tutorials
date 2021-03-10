@@ -22,6 +22,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-   bash task.sh
+   bash task1.sh
   displayName: 'run script'
 
