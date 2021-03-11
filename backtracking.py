@@ -7,10 +7,3 @@ def letterCombinations(digits):
 
 print(letterCombinations(x))
 
-
-'''for loop
-    d = characters(a,b,c)
-    digits = 2,3
-    itertools.products = inbuilt module can accept multiple lists
-    * = to unpack the iterable into positional arguments
-    joins = joins all items in a tuples'''
