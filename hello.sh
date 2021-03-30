@@ -1,7 +1,7 @@
 
 count=10
 
-if (( count < 8 ))
+if (( count < 10 ))
 then 
    echo first value is upto date"
 elif (( count > 9 )
